@@ -1,13 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import {
-  ActivityIndicator,
-  Image,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { ActivityIndicator, Image, Pressable,StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -28,9 +21,7 @@ export default function App() {
       {url ? <Image style={styles.image} source={{ uri: url }} /> : null}
       {isLoading && !url ? <ActivityIndicator /> : null}
       {!url && !isLoading ? (
-        <Text style={styles.text}>
-          Appuyez sur le bouton pour charger une image.
-        </Text>
+        <Text style={styles.text}>Appuyez sur le bouton pour charger une image.</Text>
       ) : null}
       <Pressable style={styles.button} onPress={fetchImage}>
         <Text style={styles.text}>Nouveau</Text>
