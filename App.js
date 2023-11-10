@@ -39,21 +39,21 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    marginBottom: "20px",
-    fontSize: "30px",
+    marginBottom: 20,
+    fontSize: 30,
     fontWeight: "bold",
   },
   text: {
-    fontSize: "20px",
+    fontSize: 20,
   },
   image: {
-    height: "300px",
-    width: "300px",
+    height: 300,
+    width: 300,
   },
   button: {
-    marginTop: "20px",
-    borderRadius: "10px",
-    padding: "10px",
+    marginTop: 20,
+    borderRadius: 10,
+    padding: 10,
     backgroundColor: "lightgray",
   },
 });
